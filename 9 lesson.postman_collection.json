@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "0fafc548-3742-4228-87df-1952a44be200",
+		"name": "9 lesson",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18349346"
+	},
+	"item": [
+		{
+			"name": "GET my user information",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "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",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.github.com/users/Sim0nsita",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"users",
+						"Sim0nsita"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find my repository",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "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",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.github.com/search/repositories/Sim0nsita",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"search",
+						"repositories",
+						"Sim0nsita"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Issue report",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "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",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Sim0nsita",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://github.com/repos/{owner}/{repo}/issues/Sim0nsita",
+					"protocol": "https",
+					"host": [
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"{owner}",
+						"{repo}",
+						"issues",
+						"Sim0nsita"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
